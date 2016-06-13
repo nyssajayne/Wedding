@@ -1,0 +1,118 @@
+@nyc-one:	#11389D;
+@nyc-two:	#D80D23;
+@nyc-three:	#4FA78F;
+@chf-one:	#0000FF;
+@chf-two:	#FF0000;
+@chf-three:	#FFFFFF;
+@mel-one:	#150471;
+@mel-two:	#FAF9E7;
+@mel-three:	#CCCCCC;
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+	
+#wrapper {
+		width: 100%;
+		height: 100%;
+	
+	.city {
+		box-sizing: border-box;
+		width: 33.33333%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		float: left;
+		-webkit-filter: grayscale(100%);
+		display: table;
+		
+		.place {
+			display: table-cell;
+			vertical-align: middle;
+			font-family: 'Oswald', sans-serif;
+			font-size: 7em;
+			text-align: center;
+		}
+	}
+	
+	#nyc {
+		background-image: url('nyc.jpg');
+		
+		.one, .two, .three {
+			color: #EEEEEE;
+		}
+	}
+	
+	#nyc:hover {
+		.one {
+			color: @nyc-one;
+		}
+		
+		.two {
+			color: @nyc-two;
+		}
+		
+		.three {
+			color: @nyc-three;
+		}
+	}
+	
+	#chf {
+		background-image: url('chf.jpg');
+		
+		.one, .two, .three {
+			color: #EEEEEE;
+		}
+	}
+	
+	#chf:hover {
+		.one {
+			color: @chf-one;
+		}
+	
+		.two {
+			color: @chf-two;
+		}
+	
+		.three {
+			color: @chf-three;
+		}
+	}
+	
+	#mel {
+		background-image: url('mel.jpg');
+		
+		.one, .two, .three {
+			color: #EEEEEE;
+		}
+	}
+	
+	#mel:hover {
+		.one {
+			color: @mel-one;
+		}
+	
+		.two {
+			color: @mel-two;
+		}
+	
+		.three {
+			color: @mel-three;
+		}
+	}
+	
+	.city:hover, .city:active {
+		-webkit-filter: grayscale(0%);
+	}
+}
+	
+	@media screen and (max-width: 768px) {
+		#wrapper .city {
+			float: none;
+			width: 100%;
+			height: 50%;
+		}
+	}

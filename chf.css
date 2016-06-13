@@ -1,0 +1,300 @@
+/* Chesterfield */
+body a,
+body a:visited {
+  color: #3753c0;
+  text-decoration: none;
+}
+body a:hover,
+body a:active {
+  color: #e20022;
+}
+body strong {
+  font-weight: 700;
+}
+body nav {
+  max-width: 96rem;
+  padding: 2rem 1rem;
+  margin: auto;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  text-align: right;
+}
+body header {
+  max-width: 96rem;
+  margin: auto;
+}
+body header img {
+  max-width: 100%;
+}
+body #details-wrapper {
+  width: 100%;
+  padding: 4rem 1rem;
+  margin: 4rem 0 7rem;
+  background-color: #a4b6ff;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+body #details-wrapper #details {
+  max-width: 96rem;
+  margin: auto;
+}
+body #details-wrapper #details #us {
+  position: relative;
+  max-width: 72.1rem;
+  margin: auto;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 3.6rem;
+}
+body #details-wrapper #details #us #names {
+  float: left;
+  width: 62.5%;
+  border-right: 0.3rem solid #000000;
+}
+body #details-wrapper #details #us #date {
+  float: right;
+  width: 37.5%;
+}
+body #details-wrapper #details #place {
+  clear: both;
+  padding-top: 4rem;
+  font-family: 'Roboto Slab', serif;
+}
+body #details-wrapper #details #place .stadium {
+  font-size: 4.8rem;
+}
+body #details-wrapper #details #place .address {
+  font-size: 3.6rem;
+}
+body .invited {
+  width: 100%;
+  padding-bottom: 7rem;
+  border-bottom: 0.3rem solid #3753c0;
+  text-align: center;
+}
+body .invited h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 7.2rem;
+  color: #3753c0;
+  font-weight: 400;
+  line-height: 3.7rem;
+}
+body .invited h2 .username {
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4.8rem;
+  color: #000000;
+}
+body .invited #rsvp {
+  margin-top: 4rem;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 2.4rem;
+  color: #3753c0;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 0;
+}
+body .invited #rsvp:hover {
+  color: #e20022;
+  cursor: pointer;
+}
+body #wrapper {
+  max-width: 960px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+body #wrapper #main .introduction,
+body #wrapper #main .blog {
+  padding-bottom: 4rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  color: #000000;
+}
+body #wrapper #main .introduction h1,
+body #wrapper #main .blog h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+body #wrapper #main .introduction p,
+body #wrapper #main .blog p {
+  margin-bottom: 1.2rem;
+}
+body #wrapper #main .introduction .map,
+body #wrapper #main .blog .map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body footer {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  max-width: 96rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+body .overlay {
+  background-color: #000000;
+  opacity: 0.6;
+}
+body .modal {
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  max-height: 80%;
+  background-color: #ffffff;
+  border: 3px solid #3753c0;
+  padding: 4rem;
+}
+body .modal h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 4.8rem;
+  text-align: center;
+}
+body .modal #guest {
+  max-width: 40rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+body .modal #guest p {
+  margin-bottom: 1rem;
+}
+body .modal #guest .guest-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  display: block;
+}
+body .modal #guest input[type="radio"] {
+  display: none;
+}
+body .modal #guest label {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+}
+body .modal #guest input[type="radio"] + label:after {
+  width: 2rem;
+  height: 0;
+  margin: 0 1rem 0.5rem;
+  padding: 1rem 0;
+  display: inline-block;
+  font-family: 'FontAwesome';
+  line-height: 0rem;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+body .modal #guest input[type="radio"].yes + label:after {
+  content: '\f00c';
+  color: #3753c0;
+}
+body .modal #guest input[type="radio"].no + label:after {
+  content: '\f00d';
+  color: #e20022;
+}
+body .modal #guest input[type="radio"].yes:checked + label:after {
+  content: '\f00c';
+  background-color: #3753c0;
+  color: #FFF;
+}
+body .modal #guest input[type="radio"].no:checked + label:after {
+  content: '\f00d';
+  background-color: #e20022;
+  color: #FFF;
+}
+body .modal #guest input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 0.2rem solid #3753c0;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+}
+body .modal #guest input[type="text"]:active,
+body .modal #guest input[type="text"]:focus {
+  border-color: #a4b6ff;
+}
+body .modal #guest input[type="submit"] {
+  display: block;
+  padding-top: 4rem;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 20px;
+  color: #3753c0;
+  text-transform: uppercase;
+  margin: auto;
+  background-color: #ffffff;
+  border: 0;
+}
+body .modal #guest input[type="submit"]:hover,
+body .modal #guest input[type="submit"]:active,
+body .modal #guest input[type="submit"]:focus {
+  color: #e20022;
+  cursor: pointer;
+}
+body .modal #guest .diet {
+  margin: 1rem 0 3rem;
+}
+body #close {
+  top: 8%;
+  right: 19%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #FFF;
+  background-color: #e20022;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 959px) {
+  html {
+    font-size: 50%;
+  }
+  body #details-wrapper #details {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 40%;
+  }
+  body #details-wrapper #details {
+    font-size: 40%;
+  }
+  body #details-wrapper #details #us #names,
+  body #details-wrapper #details #us #date {
+    float: none;
+    padding: 0;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  body #details-wrapper #details #us #names {
+    border-right: 0;
+  }
+  body #details-wrapper #details #us #date {
+    border-bottom: 0.3rem solid #000000;
+  }
+  body #wrapper #main .introduction h1,
+  body #wrapper #main .blog h1 {
+    font-size: 3.4rem;
+  }
+  body #wrapper #main .introduction p,
+  body #wrapper #main .blog p {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  body .modal {
+    width: 90%;
+    left: 5%;
+  }
+  body #close {
+    right: 3%;
+  }
+}

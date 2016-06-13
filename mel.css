@@ -1,0 +1,234 @@
+/* Melbourne */
+body.page-id-24 {
+  background-color: #000000;
+  background-image: url('images/mel-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: 'Raleway', sans-serif;
+}
+body.page-id-24 a,
+body.page-id-24 a:visited {
+  color: #9ec8e9;
+  text-decoration: none;
+}
+body.page-id-24 a:hover,
+body.page-id-24 a:active {
+  color: #f5909d;
+}
+body.page-id-24 nav {
+  max-width: 76.8rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: right;
+  margin: auto;
+}
+body.page-id-24 header {
+  width: 100%;
+}
+body.page-id-24 header img {
+  display: block;
+  width: 100%;
+  max-width: 76.8rem;
+  margin: auto;
+}
+body.page-id-24 svg {
+  width: 100%;
+  max-width: 76.8rem;
+  margin: auto;
+  display: block;
+  height: 25rem;
+}
+body.page-id-24 svg text {
+  display: block;
+}
+body.page-id-24 .invited {
+  max-width: 96rem;
+  margin: auto;
+  font-size: 3rem;
+  text-align: center;
+}
+body.page-id-24 .invited h2 {
+  font-weight: 600;
+  color: #f5909d;
+}
+body.page-id-24 .invited h2 svg {
+  max-width: 96rem;
+  margin: auto;
+}
+body.page-id-24 #rsvp {
+  cursor: pointer;
+}
+body.page-id-24 #wrapper {
+  max-width: 76.8rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+body.page-id-24 #wrapper #main .introduction,
+body.page-id-24 #wrapper #main .blog {
+  margin-bottom: 3.6rem;
+}
+body.page-id-24 #wrapper #main .introduction h1,
+body.page-id-24 #wrapper #main .blog h1 {
+  color: #f5909d;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+body.page-id-24 #wrapper #main .introduction p,
+body.page-id-24 #wrapper #main .blog p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+body.page-id-24 #wrapper #main .introduction .map,
+body.page-id-24 #wrapper #main .blog .map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body.page-id-24 footer {
+  max-width: 76.8rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0 auto 1.2rem;
+  padding: 0 1rem;
+}
+body.page-id-24 .overlay {
+  background-color: #000;
+  opacity: 0.6;
+}
+body.page-id-24 .modal {
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  max-height: 80%;
+  background-color: #000;
+  border: 1px solid #ffffff;
+}
+body.page-id-24 .modal h2 {
+  font-size: 3.6rem;
+  color: #f5909d;
+  text-align: center;
+}
+body.page-id-24 .modal section {
+  display: block;
+  box-sizing: border-box;
+  padding: 3rem;
+  max-width: 40rem;
+  margin: auto;
+}
+body.page-id-24 .modal section #guest {
+  text-align: center;
+}
+body.page-id-24 .modal section #guest p {
+  margin-top: 2rem;
+}
+body.page-id-24 .modal section #guest .guest-name {
+  display: block;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+body.page-id-24 .modal section #guest input[type="radio"] {
+  display: none;
+}
+body.page-id-24 .modal section #guest label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+body.page-id-24 .modal section #guest input[type="radio"] + label:after {
+  width: 2rem;
+  height: 0;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  display: inline-block;
+  font-family: 'FontAwesome';
+  line-height: 0rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+body.page-id-24 .modal section #guest input[type="radio"].yes + label:after {
+  content: '\f087';
+  color: #9ec8e9;
+}
+body.page-id-24 .modal section #guest input[type="radio"].no + label:after {
+  content: '\f088';
+  color: #f5909d;
+}
+body.page-id-24 .modal section #guest input[type="radio"].yes:checked + label:after {
+  content: '\f164';
+  background-color: #9ec8e9;
+  color: #FFF;
+}
+body.page-id-24 .modal section #guest input[type="radio"].no:checked + label:after {
+  content: '\f165';
+  background-color: #f5909d;
+  color: #FFF;
+}
+body.page-id-24 .modal section #guest input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 0.2rem solid #FFF;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+body.page-id-24 .modal section #guest input[type="text"]:active,
+body.page-id-24 .modal section #guest input[type="text"]:focus {
+  border-color: #f5909d;
+}
+body.page-id-24 .modal section #guest input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #000000;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #9ec8e9;
+  font-size: 2rem;
+  text-align: center;
+}
+body.page-id-24 .modal section #guest input[type="submit"]:hover,
+body.page-id-24 .modal section #guest input[type="submit"]:active,
+body.page-id-24 .modal section #guest input[type="submit"]:focus {
+  background-color: #000;
+  color: #ffffff;
+  cursor: pointer;
+}
+body.page-id-24 .modal section #guest .diet {
+  margin: 1rem 0 3rem;
+}
+body.page-id-24 #close {
+  top: 8%;
+  right: 19%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #FFF;
+  background-color: #FF0000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  html body svg text .homecoming {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}

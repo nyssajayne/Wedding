@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+#wrapper .city {
+  box-sizing: border-box;
+  width: 33.33333%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  float: left;
+  -webkit-filter: grayscale(100%);
+  display: table;
+}
+#wrapper .city .place {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Oswald', sans-serif;
+  font-size: 7em;
+  text-align: center;
+}
+#wrapper #nyc {
+  background-image: url('nyc.jpg');
+}
+#wrapper #nyc .one,
+#wrapper #nyc .two,
+#wrapper #nyc .three {
+  color: #EEEEEE;
+}
+#wrapper #nyc:hover .one {
+  color: #11389d;
+}
+#wrapper #nyc:hover .two {
+  color: #d80d23;
+}
+#wrapper #nyc:hover .three {
+  color: #4fa78f;
+}
+#wrapper #chf {
+  background-image: url('chf.jpg');
+}
+#wrapper #chf .one,
+#wrapper #chf .two,
+#wrapper #chf .three {
+  color: #EEEEEE;
+}
+#wrapper #chf:hover .one {
+  color: #0000ff;
+}
+#wrapper #chf:hover .two {
+  color: #ff0000;
+}
+#wrapper #chf:hover .three {
+  color: #ffffff;
+}
+#wrapper #mel {
+  background-image: url('mel.jpg');
+}
+#wrapper #mel .one,
+#wrapper #mel .two,
+#wrapper #mel .three {
+  color: #EEEEEE;
+}
+#wrapper #mel:hover .one {
+  color: #150471;
+}
+#wrapper #mel:hover .two {
+  color: #faf9e7;
+}
+#wrapper #mel:hover .three {
+  color: #cccccc;
+}
+#wrapper .city:hover,
+#wrapper .city:active {
+  -webkit-filter: grayscale(0%);
+}
+@media screen and (max-width: 768px) {
+  #wrapper .city {
+    float: none;
+    width: 100%;
+    height: 50%;
+  }
+}

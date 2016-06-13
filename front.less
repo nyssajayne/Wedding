@@ -1,0 +1,193 @@
+/* Front Page */
+@main-blue: #303669;
+@main-pink: #ec509a;
+@main-yellow: #ffe700;
+@main-beige: #fff8eb;
+
+body {
+	background-color: @main-beige;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	color: #000;
+
+	#header-wrapper {
+		position: relative;
+
+		#map-canvas {
+			width: 100%;
+			height: 30rem;
+		}
+
+		header {
+			width: 40%;
+			padding: 1rem;
+			position: absolute;
+			left: 1rem;
+			top: 1rem;
+
+			h1 {
+				height: 24rem;
+				margin: auto;
+
+				img {
+					//width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 1.6rem;
+	}
+
+	#wrapper {
+		width: 100%;
+		position: relative;
+		background-color: @main-blue;
+
+		section {
+			width: 28rem;
+			height: 100%;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			padding: 3rem;
+			color: #FFF;
+
+			#loginform {
+				p {
+					margin-bottom: 2rem;
+				}
+
+				label {
+					display: block;
+					font-weight: 500;
+					font-size: 1.2rem;
+				}
+
+				label:before {
+					width: 2rem;
+					height: 0;
+					margin: 0 1rem 0.5rem 0;
+					padding: 1rem 0;
+					display: inline-block;
+					font-family: 'FontAwesome';
+					line-height: 0;
+					text-align: center;
+					color: @main-yellow;
+				}
+
+				.login-username {
+					label:before {
+						content: '\f007';
+					}
+				}
+
+				.login-password {
+					label:before {
+						content: '\f084';
+					}
+				}
+
+				input {
+					width: 100%;
+					padding: 1rem;
+					outline: none;
+					border: 0.2rem solid #FFF;
+					background-color: @main-blue;
+					color: #FFF;
+					font-size: 1.6rem;
+				}
+
+				input[type="text"]:focus, input[type="password"]:focus {
+					border-color: @main-pink;
+				}
+
+				input[type="submit"], a, a:visited {
+					display: block;
+					border-color: @main-yellow;
+					background-color: @main-blue;
+					color: @main-yellow;
+					font-size: 2rem;
+					font-family: 'FontAwesome', 'Raleway', sans-serif;
+				}
+
+				input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus,
+				a:hover, a:active, a:focus {
+					border-color: @main-pink;
+					color: @main-pink;
+					cursor: pointer;
+				}
+			}
+
+			h2 {
+				font-weight: 300;
+				font-size: 2rem;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+
+			a, a:visited {
+				display: block;
+				width: 100%;
+				padding: 1rem;
+				outline: none;
+				border: 0.2rem solid @main-yellow;
+				background-color: @main-blue;
+				color: @main-yellow;
+				font-size: 2rem;
+				font-family: 'FontAwesome', 'Raleway', sans-serif;
+				text-decoration: none;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+
+			a:hover, a:active, a:focus {
+				border-color: @main-pink;
+				color: @main-pink;
+				cursor: pointer;
+			}
+		}
+
+		#main {
+			max-width: 96rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding-left: 28rem;
+			background-color: @main-blue;
+
+			article {
+				background-color: @main-beige;
+				padding: 3rem;
+
+				p:first-of-type {
+					font-size: 3rem;
+					margin-bottom: 2.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 635px) {
+	body {
+		#wrapper {
+			section {
+				width: 100%;
+				height: auto;
+				position: relative;
+			}
+
+			#main {
+				width: 100%;
+				max-width: none;
+				position: relative;
+				padding-left: 0;
+			}
+		}
+	}
+}

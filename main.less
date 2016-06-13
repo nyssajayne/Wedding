@@ -1,0 +1,143 @@
+/* Resets */
+html {
+	font-size: 62.5%;
+}
+
+html, body, header, footer, aside, section, div, span, p, a, h1, h2, h3, h4, h5, h6, input {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+input, button {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	overflow-y: scroll;
+}
+
+#close {
+	display: none;
+	position: fixed;
+	z-index: 2;
+}
+
+/* Landing Page */
+body.page-id-20 {
+	#wrapper{
+		width: 100%;
+		height: 100%;
+
+		.city{
+			box-sizing: border-box;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			-webkit-filter: grayscale(100%);
+			display: table;
+			
+			.place {
+				display: table-cell;
+				vertical-align: middle;
+				font-family: Oswald, sans-serif;
+				font-size: 14em;
+				text-align: center;
+
+				a, a:visited {
+					text-decoration: none;
+				}
+			}
+		}
+
+		#nyc, #chf, #mel {
+			.one, .three, .two {
+				color: #EEE;
+			}
+		}
+
+		#nyc {
+			background-image: url('images/nyc-ex.jpg');		
+		}
+
+		#nyc:hover {
+			.one {
+				color: #11389d;
+			}
+
+			.two {
+				color: #d80d23;
+			}
+
+			.three {
+				color: #4fa78f;
+			}
+		}
+
+		#chf {
+			background-image: url('images/chf-ex.jpg');
+		}
+
+		#chf:hover {
+			.one {
+				color: #00f;
+			}
+
+			.two { 
+				color: red;
+			}
+
+			.three { 
+				color: #fff;
+			}
+		} 
+
+		#mel {
+			background-image: url('images/mel-ex.jpg');
+		}
+
+		#mel:hover {
+			.one {
+				color: #150471;
+			}
+
+			.two {
+				color: #faf9e7;
+			}
+
+			.three{
+				color: #ccc;
+			}
+		}
+
+		.city:active, .city:hover {
+			-webkit-filter: grayscale(0%)
+		}
+	}
+
+	@media screen and (max-width:768px) {
+		#wrapper .city {
+			float: none;
+			width: 100% !important;
+			height: 50%;
+		}
+	}
+}

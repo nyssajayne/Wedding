@@ -1,0 +1,281 @@
+/* Melbourne */
+@mel-black: #000;
+@mel-pink: #F5909D;
+@mel-blue: #9EC8E9;
+@mel-white: #FFF;
+
+@raleway: 'Raleway', sans-serif;
+
+body.page-id-24 {
+	background-color: @mel-black;
+	background-image: url('images/mel-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	font-family: @raleway;
+
+	a, a:visited {
+		color: @mel-blue;
+		text-decoration: none;
+	}
+
+	a:hover, a:active {
+		color: @mel-pink;
+	}
+
+	nav {
+		max-width: 76.8rem;
+		padding: 1rem;
+		font-size: 1.2rem;
+		text-align: right;
+		margin: auto;
+	}
+
+	header {
+		width: 100%;
+
+		img {
+			display: block;
+			width: 100%;
+			max-width: 76.8rem;
+			margin: auto;
+		}
+	}
+
+	svg {
+		width: 100%;
+		max-width: 76.8rem;
+		margin: auto;
+		display: block;
+		height: 25rem;
+
+		text {
+			display: block;
+		}
+	}
+
+	.invited {
+		max-width: 96rem;
+		margin: auto;
+		font-size: 3rem;
+		text-align: center;
+
+		h2 {
+			font-weight: 600;
+			color: @mel-pink;
+
+			svg {
+				max-width: 96rem;
+				margin: auto;
+			}
+		}
+	}
+
+	#rsvp {
+		cursor: pointer;
+	}
+
+	#wrapper {
+		max-width: 76.8rem;
+		padding: 0 1rem;
+		margin: auto;
+
+		#main {
+			.introduction, .blog {
+				margin-bottom: 3.6rem;
+
+				h1 {
+					color: @mel-pink;
+					font-weight: 600;
+					font-size: 2.4rem;
+					margin-bottom: 1.8rem;
+				}
+
+				p {
+					color: @mel-white;
+					font-weight: 300;
+					font-size: 1.8rem;
+					margin-bottom: 1.2rem;
+				}
+
+				.map {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+	}
+
+	footer {
+		max-width: 76.8rem;
+		color: @mel-white;
+		font-weight: 300;
+		font-size: 1.8rem;
+		margin: 0 auto 1.2rem;
+		padding: 0 1rem;
+	}
+
+	.overlay {
+		background-color: #000;
+		opacity: 0.6;
+	}
+
+	.modal {
+		top: 10%;
+		left: 20%;
+		width: 60%;
+		max-height: 80%;
+		background-color: #000;
+		border: 1px solid @mel-white;
+
+		h2 {
+			font-size: 3.6rem;
+			color: @mel-pink;
+			text-align: center;
+		}
+
+		section {
+			display: block;
+			box-sizing: border-box;
+			padding: 3rem;
+			max-width: 40rem;
+			margin: auto;
+
+			#guest {
+				text-align: center;
+
+				p {
+					margin-top: 2rem;
+				}
+
+				.guest-name {
+					display: block;
+					color: @mel-white;
+					font-size: 1.8rem;
+					margin-bottom: 1.2rem;
+				}
+
+				input[type="radio"] {
+					display: none;
+				}
+
+				label {
+					font-family: @raleway;
+					font-size: 1.8rem;
+					color: @mel-white;
+				}
+
+				input[type="radio"] + label:after {
+					width: 2rem;
+					height: 0;
+					margin: 0 1rem;
+					padding: 1rem 0;
+					display: inline-block;
+					font-family: 'FontAwesome';
+					line-height: 0rem;
+					text-align: center;
+					font-size: 1.4rem;
+					border-radius: 50%;
+					vertical-align: bottom;
+				}
+
+				input[type="radio"].yes + label:after {
+					content: '\f087';
+					color: @mel-blue;
+				}
+
+				input[type="radio"].no + label:after {
+					content: '\f088';
+					color: @mel-pink;
+				}
+
+				input[type="radio"].yes:checked + label:after {
+					content: '\f164';
+					background-color: @mel-blue;
+					color: #FFF;
+				}
+
+				input[type="radio"].no:checked + label:after {
+					content: '\f165';
+					background-color: @mel-pink;
+					color: #FFF;
+				}
+
+				input[type="text"] {
+					width: 100%;
+					padding: 1rem;
+					outline: none;
+					border: 0.2rem solid #FFF;
+					background-color: #000;
+					color: #FFF;
+					font-size: 1.6rem;
+					font-family: @raleway;
+					font-weight: 300;
+				}
+
+				input[type="text"]:active, input[type="text"]:focus {
+					border-color: @mel-pink;
+				}
+
+				input[type="submit"] {
+					display: block;
+					width: 100%;
+					padding: 1rem;
+					margin-bottom: 2rem;
+					background-color: @mel-black;
+					border: 0;
+					font-family: @raleway;
+					font-weight: 300;
+					text-transform: uppercase;
+					color: @mel-blue;
+					font-size: 2rem;
+					text-align: center;
+				}
+
+				input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+					background-color: #000;
+					color: @mel-white;
+					cursor: pointer;
+				}
+
+				.diet {
+					margin: 1rem 0 3rem;
+				}
+			}
+		}
+	}
+
+	#close {
+		top: 8%;
+		right: 19%;
+		width: 2.5rem;
+		height: 2.5rem;
+		color: #FFF;
+		background-color: #FF0000;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 2.5rem;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		body {
+			svg {
+				text {
+					.homecoming {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 50%;
+	}
+}
